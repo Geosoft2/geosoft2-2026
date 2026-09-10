@@ -1,6 +1,6 @@
 # Geosoftware II handout repository (WiSe 2026/27)
 
-**STAC Index: Collection Search**
+**AIHealthMap - AI assisted web mapping application for health data discovery**
 
 Teachers: [@PondiB](https://github.com/PondiB), [@DaChro](https://github.com/DaChro)
 

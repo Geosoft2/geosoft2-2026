@@ -49,4 +49,4 @@ The goal of the project in this semester is to develop an AI assisted web mappin
 
 Your presentations and handouts will serve as preparation by discussing several relevant topics that form the technical background of this project task. 
 
-The specific topics will be posted on Friday, 10th September, as GitHub issues with label "Topic". Choose a topic by commenting on the respective issue. Make sure that in your presentation/handout you cover at least the aspects mentioned in the issue. More is better, but only really better if you evaluate alternatives, phrase opinions, and provide guidelines for your fellow students.
+The specific topics will be posted on Thursday, 10th September, as GitHub issues with label "Topic". Choose a topic by commenting on the respective issue. Make sure that in your presentation/handout you cover at least the aspects mentioned in the issue. More is better, but only really better if you evaluate alternatives, phrase opinions, and provide guidelines for your fellow students.

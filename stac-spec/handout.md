@@ -68,7 +68,7 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 | `assets` | `Map<string, [Asset Object](#assets)>` | Dictionary of asset objects that can be downloaded, each with a unique key. |
 | `item_assets` | `Map<string, [Item Asset Definition Object](#item-asset-definition-object)>` | A dictionary of assets that can be found in member Items. |
 
-(von hier: https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md#catalog-fields)
+(von hier: https://github.com/radiantearth/stac-spec/blob/master/collection-spec/collection-spec.md#collection-fields)
 
 ### 3.3 Catalog
 - Organisiert und verknüpft STAC Items, Collections und weitere Kataloge.
@@ -112,4 +112,4 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 
 ## 5 Quellen
 - https://stacspec.org/en/tutorials/intro-to-stac/
-- https://github.com/radiantearth/stac-spec/
+- https://github.com/radiantearth/stac-spec/ <- gut um noch Sachen nachzugucken :D

@@ -47,7 +47,7 @@ Die verfügbaren Möglichkeiten hängen davon ab, welcher Endpunkt und welche Er
 jeweiligen API unterstützt werden. 
 
 # 3.1 Freitextsuche (q):
-Der Parameter q kann bei entsprechender Unterstützung eine opzionale Suche nach Begriffen ermöglichen, 
+Der Parameter q kann bei entsprechender Unterstützung eine optionale Suche nach Begriffen ermöglichen, 
 bspw. nach Namen, Beschreibung oder Schlagwörtern von Collections.
 ### Beispiel: 
 ```http
@@ -89,6 +89,7 @@ Zusätzliche Erweiterungen können weitere Funktionen bereitstellen, bspw. Freit
 Die verfügbaren Funktionen hängen von der jeweiligen STAC-API-Implementierung ab. Vor der Verwendung eines Parameters sollte deshalb geprüft werden, ob der entsprechende Endpunkt die benötigte Funktion unterstützt. 
 
 # 7. Quellen
-https://stacspec.org/en
-https://github.com/stac-api-extensions/collection-search
-https://stac-api-extensions.github.io/
+- https://stacspec.org/en
+- https://github.com/stac-api-extensions/collection-search
+- https://stac-api-extensions.github.io/
+- https://documentation.dataspace.copernicus.eu/APIs/STAC.html

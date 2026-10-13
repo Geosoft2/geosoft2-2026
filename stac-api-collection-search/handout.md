@@ -18,7 +18,9 @@ limit: -> Begrenzung der Ergebnisse
 -> Legt fest, wie viele Ergebnisse pro Seite zurückgegeben werden
 
 # Beispiel: Räumliche Suche
+```http
 GET /collections?bbox=7.5,51.8,7.7,52.0
+```
 Die Bounding Box wird durch 4 Werte beschrieben:
 min. Längengrad, min. Breitengrad, max. Längengrad, max. Breitengrad
 Damit wird die Suche auf einen geographischen Bereich begrenzt, sofern der verwendete Endpunkt
@@ -39,7 +41,9 @@ eingeschränkt werden.
 Der Parameter q kann bei entsprechender Unterstützung eine Suche nach Begriffen ermöglichen, 
 bspw. nach Namen, Beschreibung oder Schlagwörtern von Collections.
 #Beispiel: 
+```http
 GET/collections?q=sentinel
+```
 Die Anfrage veranschaulicht  eine Suche nach dem Begriff "sentinel". Welche Metadaten durchsucht
 werden, hängt von der jeweiligen Implementierung ab.
 
@@ -52,7 +56,9 @@ Mögliche Suchkriterien sind bspw.:
       - zeitliche Ausdehnung
       - Erstellungszeitpunkt
 # Beispiel: 
+```http
 GET/collections?sortby=id
+```
 Die Anfrage veranschaulicht eine Sortierung nach der Collection-ID. Die konkrete Syntax und Verfügbarkeit
 richten sich nach der unterstützten Sortierfunktion der API. 
 
@@ -60,4 +66,6 @@ Eine Sortierung ist besonders hilfreich, wenn viele Collections gefunden werden 
 in einer nachvollziehbaren Reihenfolge angezeigt werden sollen.
 
 # 4.Feldauswahl(fields):
-Mit der 
+Mit der Fields Extension können bestimmte Eigenschaften ausgewählt werden, die in der Antwort enthalten sein sollen. 
+Dadurch müssen nicht immer sämtliche verfügbare Metadaten übertragen werden. Das kann die Größe der Anwort reduzieren und die Weiterverarbeitung verarbeiten. 
+Die konkrete Syntax sowie die unterstützten Felder hängen von der implementierten Erweiterungen und dem jeweiligen Endpunkt ab. 

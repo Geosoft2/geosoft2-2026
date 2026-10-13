@@ -29,14 +29,17 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 - Grundbaustein von STAC.
 - Beschreibt ein oder mehrere Assets mithilfe von GeoJSON und zusätzlichen Metadaten.
 - Enthält beispielsweise Informationen zur geografischen Lage und zum Zeitpunkt der Datenerfassung.
+![alt text](image.png)
 
 ### 3.2 Collection
 - Fasst zusammengehörige STAC Items zu einer Sammlung zusammen.
 - Enthält zusätzliche Metadaten, beispielsweise zur räumlichen und zeitlichen Ausdehnung, zur Lizenz und zu den Datenanbietern.
+![alt text](image-2.png)
 
 ### 3.3 Catalog
 - Organisiert und verknüpft STAC Items, Collections und weitere Kataloge.
 - Dient als Einstiegspunkt zur Navigation durch die Daten.
+![alt text](image-1.png)
 
 ### 3.4 Asset
 - Eine Datei, die räumlich-zeitliche Informationen über die Erde enthält, z. B. ein Satellitenbild oder eine LiDAR-Punktwolke.

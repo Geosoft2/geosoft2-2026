@@ -109,7 +109,17 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 - Extensions ergänzen die STAC-Spezifikation um zusätzliche Felder und Funktionen für bestimmte Datentypen oder Anwendungsbereiche.
 - Sie ermöglichen es beispielsweise, spezielle Informationen zu bestimmten Geodaten zu beschreiben.
 - Die STAC-Community entwickelt gemeinsam Erweiterungen und zusätzliche Metadatenstandards.
+- Ein paar Beispiele:
+    - EO (Electro-Optical): Informationen zu optischen Erdbeobachtungsdaten, z. B. Wolkenbedeckung.
+    - Projection: Informationen zum Koordinatenreferenzsystem und zur Projektion.
+    - Raster: Zusätzliche Angaben zu Rasterdaten.
+    - SAR: Angaben zu Radaraufnahmen.
+    - Point Cloud: Informationen zu 3D-Punktwolken.
+- Liste der Extensions: https://stac-extensions.github.io/
+
 
 ## 5 Quellen
 - https://stacspec.org/en/tutorials/intro-to-stac/
-- https://github.com/radiantearth/stac-spec/ <- gut um noch Sachen nachzugucken :D
+- **https://github.com/radiantearth/stac-spec/** */ <- gut um noch Sachen nachzugucken :D
+- https://www.youtube.com/watch?v=Ugazf5bWsGE
+- https://stac-extensions.github.io/

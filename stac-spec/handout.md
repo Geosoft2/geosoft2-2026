@@ -29,7 +29,23 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 - Grundbaustein von STAC.
 - Beschreibt ein oder mehrere Assets mithilfe von GeoJSON und zusätzlichen Metadaten.
 - Enthält beispielsweise Informationen zur geografischen Lage und zum Zeitpunkt der Datenerfassung.
-![alt text](image.png)
+
+#### Item fields 
+(von hier: https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md#item-fields)
+
+
+| Field Name | Type | Description |
+|---|---|---|
+| `type` | string | **REQUIRED.** Type of the GeoJSON Object. MUST be set to `Feature`. |
+| `stac_version` | string | **REQUIRED.** The STAC version the Item implements. |
+| `stac_extensions` | `[string]` | A list of extensions the Item implements. |
+| `id` | string | **REQUIRED.** Provider identifier. The ID should be unique within the [Collection](../collection-spec/collection-spec.md) that contains the Item. |
+| `geometry` | GeoJSON Geometry Object \| null | **REQUIRED.** Defines the full footprint of the asset represented by this item, formatted according to RFC 7946, [section 3.1](https://tools.ietf.org/html/rfc7946#section-3.1) if a geometry is provided or [section 3.2](https://tools.ietf.org/html/rfc7946#section-3.2) if *no* geometry is provided. |
+| `bbox` | `[number]` | **REQUIRED if `geometry` is not `null`, prohibited if `geometry` is `null`.** Bounding Box of the asset represented by this Item, formatted according to [RFC 7946, section 5](https://tools.ietf.org/html/rfc7946#section-5). |
+| `properties` | [Properties Object](#properties-object) | **REQUIRED.** A dictionary of additional metadata for the Item. |
+| `links` | [Link Object](#links) | **REQUIRED.** List of link objects to resources and related URLs. See the [best practices](../best-practices.md#use-of-links) for details on when the use of `self` links is strongly recommended. |
+| `assets` | `Map<string, Asset Object>` | **REQUIRED.** Dictionary of asset objects that can be downloaded, each with a unique key. |
+| `collection` | string | The `id` of the STAC Collection this Item references to. This field is **required** if a link with a `collection` relation type is present and is **not allowed** otherwise. |
 
 ### 3.2 Collection
 - Fasst zusammengehörige STAC Items zu einer Sammlung zusammen.
@@ -43,7 +59,7 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 
 ### 3.4 Asset
 - Eine Datei, die räumlich-zeitliche Informationen über die Erde enthält, z. B. ein Satellitenbild oder eine LiDAR-Punktwolke.
-- Ein STAC Item verweist auf die zugehörigen Assets.
+- Das Asset enthält die eigentlichen Daten; ein STAC Item verweist darauf und beschreibt sie mit Metadaten.
 
 ### 3.5 Link
 - Verknüpft STAC-Komponenten miteinander.
@@ -59,8 +75,9 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 
 
 ## 4 Erweiterungen
-- STAC ist flexibel und kann um zusätzliche Felder und Funktionen erweitert werden.
-- Extensions ermöglichen die Anpassung an bestimmte Datentypen und Anwendungsbereiche.
+- STAC ist flexibel und kann durch sogenannte "Extensions" erweitert werden.
+- Extensions ergänzen die STAC-Spezifikation um zusätzliche Felder und Funktionen für bestimmte Datentypen oder Anwendungsbereiche.
+- Sie ermöglichen es beispielsweise, spezielle Informationen zu bestimmten Geodaten zu beschreiben.
 - Die STAC-Community entwickelt gemeinsam Erweiterungen und zusätzliche Metadatenstandards.
 
 ## 5 Quellen

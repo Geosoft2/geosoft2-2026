@@ -201,3 +201,4 @@ Dies ist ein Vorschlag, keine Festlegung:
 - Leaflet-Alternative: [stac-utils/stac-layer](https://github.com/stac-utils/stac-layer)
 - Server: [stac-utils/stac-fastapi](https://github.com/stac-utils/stac-fastapi)
 - Daten: [Sentinel-5P auf AWS Open Data](https://registry.opendata.aws/sentinel5p/), [Planetary Computer](https://planetarycomputer.microsoft.com/)
+  

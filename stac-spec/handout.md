@@ -30,7 +30,7 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 - Beschreibt ein oder mehrere Assets mithilfe von GeoJSON und zusätzlichen Metadaten.
 - Enthält beispielsweise Informationen zur geografischen Lage und zum Zeitpunkt der Datenerfassung.
 
-#### Item fields 
+#### Item fields:
 | Field Name | Type | Description |
 |---|---|---|
 | `type` | string | **REQUIRED.** Type of the GeoJSON Object. MUST be set to `Feature`. |
@@ -43,14 +43,14 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 | `links` | [Link Object](#links) | **REQUIRED.** List of link objects to resources and related URLs. See the [best practices](../best-practices.md#use-of-links) for details on when the use of `self` links is strongly recommended. |
 | `assets` | `Map<string, Asset Object>` | **REQUIRED.** Dictionary of asset objects that can be downloaded, each with a unique key. |
 | `collection` | string | The `id` of the STAC Collection this Item references to. This field is **required** if a link with a `collection` relation type is present and is **not allowed** otherwise. |
+
 (von hier: https://github.com/radiantearth/stac-spec/blob/master/item-spec/item-spec.md#item-fields)
 
 ### 3.2 Collection
 - Fasst zusammengehörige STAC Items zu einer Sammlung zusammen.
 - Enthält zusätzliche Metadaten, beispielsweise zur räumlichen und zeitlichen Ausdehnung, zur Lizenz und zu den Datenanbietern.
 
-#### Collection fields
-
+#### Collection fields:
 | Element | Type | Description |
 |---|---|---|
 | `type` | string | **REQUIRED.** Must be set to `Collection` to be a valid Collection. |
@@ -67,14 +67,14 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 | `links` | `[[Link Object]](#links)` | **REQUIRED.** A list of references to other documents. |
 | `assets` | `Map<string, [Asset Object](#assets)>` | Dictionary of asset objects that can be downloaded, each with a unique key. |
 | `item_assets` | `Map<string, [Item Asset Definition Object](#item-asset-definition-object)>` | A dictionary of assets that can be found in member Items. |
+
 (von hier: https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md#catalog-fields)
 
 ### 3.3 Catalog
 - Organisiert und verknüpft STAC Items, Collections und weitere Kataloge.
 - Dient als Einstiegspunkt zur Navigation durch die Daten.
 
-#### Catalog fields
-
+#### Catalog fields:
 | Element | Type | Description |
 |---|---|---|
 | `type` | string | **REQUIRED.** Set to `Catalog` if this Catalog only implements the Catalog spec. |
@@ -84,6 +84,7 @@ STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchs
 | `title` | string | A short descriptive one-line title for the Catalog. |
 | `description` | string | **REQUIRED.** Detailed multi-line description to fully explain the Catalog. [CommonMark 0.29](http://commonmark.org/) syntax MAY be used for rich text representation. |
 | `links` | `[[Link Object]](#links)` | **REQUIRED.** A list of references to other documents. |
+
 (von hier: https://github.com/radiantearth/stac-spec/blob/master/catalog-spec/catalog-spec.md#catalog-fields)
 
 ### 3.4 Asset

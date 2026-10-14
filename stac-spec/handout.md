@@ -3,9 +3,7 @@ Author: [@torsten-geoloek](https://github.com/torsten-geoloek)
 # STAC-Spezifikation
 STAC macht Geodaten durch eine einheitliche Struktur leichter auffindbar, durchsuchbar und nutzbar.
 
-## 1 Einführung 
-
-### 1.1 Was ist STAC?
+## 1 Was ist STAC? 
 - SpatioTemporal Asset Catalog
 - Ziel: eine einheitliche Standardsprache für die Beschreibung von Geodaten
     - Dadurch können geografische Daten einfacher gefunden, durchsucht und abgefragt werden.

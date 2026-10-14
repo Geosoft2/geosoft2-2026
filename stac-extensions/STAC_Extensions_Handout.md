@@ -1,6 +1,6 @@
 # STAC Extensions
 
-Geosoftware II · WiSe 2026/27 · Timo, Paul
+Geosoftware II · WiSe 2026/27 · Timo (@TimoMS05), Paul (@paulk512)
 
 ## Worum geht es bei STAC?
 
